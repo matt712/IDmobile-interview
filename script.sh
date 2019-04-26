@@ -1,5 +1,4 @@
-yum install wget -y
-cd ~
-wget https://www.drupal.org/download-latest/zip 
-yum install unzip -y
-
+yum clean all
+yum -y update
+yum -y install httpd
+systemctl start httpd
